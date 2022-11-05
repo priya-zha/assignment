@@ -40,7 +40,7 @@ if __name__=="__main__":
     r = cv2.selectROI("Image has been rotated . Please select the region to save the cropped image", imageRotated)
     cropped = imageRotated[int(r[1]):int(r[1]+r[3]),
                               int(r[0]):int(r[0]+r[2])]
-    cv2.imwrite('rectangle'+str(num)+'.jpg', cropped)
+    cv2.imwrite('rectangle_output_'+str(num)+'.jpg', cropped)
     print("Press C to exit and then try for other rectangles")
     output = cv2.imread('rectangle'+str(num)+'.jpg')
     cv2.imshow("Output. Please press enter to save the output",output)
