@@ -4,9 +4,6 @@ import math
 import numpy as np
 import random
 
-# function to display the coordinates of
-# of the points clickeimport numpy as np
-
 def click_event(event, x, y, flags, params):
 
    # checking for left mouse clicks
