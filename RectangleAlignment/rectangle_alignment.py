@@ -42,7 +42,7 @@ if __name__=="__main__":
                               int(r[0]):int(r[0]+r[2])]
     cv2.imwrite('rectangle_output_'+str(num)+'.jpg', cropped)
     print("Press C to exit and then try for other rectangles")
-    output = cv2.imread('rectangle'+str(num)+'.jpg')
+    output = cv2.imread('rectangle_output_'+str(num)+'.jpg')
     cv2.imshow("Output. Please press enter to save the output",output)
     cv2.waitKey(0)
 
